@@ -19,5 +19,4 @@ void main() {
     total += valor;
   }
   print("total: $total");
-  print("\n");
 }
