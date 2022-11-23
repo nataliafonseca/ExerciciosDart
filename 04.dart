@@ -15,18 +15,28 @@ void main() {
   var matricula = '';
   while (matricula != '00000') {
     print("Entrada ${total_alunos + 1} \n");
+
     print("Informe a matricula");
     matricula = stdin.readLineSync()!;
+    if (matricula == '00000') {
+      break;
+    }
+
     print("Informe o nome");
     var nome = stdin.readLineSync()!;
+
     print("Informe o sexo (M/F)");
     var sexo = stdin.readLineSync()!;
+
     print("Informe a nota 1");
     var nota1 = double.tryParse(stdin.readLineSync()!);
+
     print("Informe a nota 2");
     var nota2 = double.tryParse(stdin.readLineSync()!);
+
     print("Informe a nota 3");
     var nota3 = double.tryParse(stdin.readLineSync()!);
+
     print("Informe a quantidade de faltas");
     var faltas = int.tryParse(stdin.readLineSync()!);
     print('\n');

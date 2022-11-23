@@ -18,6 +18,9 @@ void main() {
 
     print("Informe o Código");
     candidato.codigo = stdin.readLineSync()!;
+    if (candidato.codigo == '0000') {
+      break;
+    }
 
     print("Informe o Curso");
     candidato.curso = stdin.readLineSync()!;
